@@ -135,7 +135,7 @@ a {
   h1 {
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: once;
+    animation-iteration-count: 1;
     animation-direction: alternate;
   }
 
@@ -680,68 +680,8 @@ img:nth-child(5) {
 
 
 
-.prompt{
-  font-style: oblique;
-  font-size:25px;
-  color:#f49208;
-}
 
-section.demo-container {
-  background-color: #f5cccc;
-  margin-top: 70px;
-  padding: 15px;
-}
-
-
-.switch {
-  position: relative;
-  margin: 50px 20px 30px 20px;
-}
-
-.switch .well {
-  width: 70px;
-  position: absolute;
-  right: 70px;
-}
-.switch #toggle {
-  -moz-appearance: none;
-  position: absolute;
-}
-
-.switch #toggle ~ div.doggy:before {
-  content: '\01F415';
-  position: absolute;
-  right: 0px;
-
-}
-.switch #toggle:checked {
-  right: 0px;
-}
-.switch #toggle:checked:after {
-  left: -70px;
-}
-.switch #toggle:checked ~ div.doggy:before {
-  content: '\01F436';
-  right: 0px;
-}
-
-.switch #toggle ~ label:before {
-  content: "No";
-  position: absolute;
-  color: #f49208;
-  left: -30px;
-  font-size: 25px;
-}
-.switch #toggle ~ label:after {
-  content: "Yes";
-  position: absolute;
-  color: #f49208;
-  left: 70px;
-  font-size: 25px;
-}
-
-
-
+ /* Style the page: Contact Me */
  /* Style the element: h2 */
  h2{
   text-align: center;
@@ -790,3 +730,88 @@ section.demo-container {
   font-size:25px;
   background-color:green;
   }
+
+
+  .prompt{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:25px;
+    color:rgb(235, 176, 98);
+  }
+
+  section.question-container {
+    background-color: #c4e9f2;
+    display: block;
+    margin-left: 25px;
+    margin-top: 70px;
+    min-width: 430px;
+    max-width: 520px;
+    padding: 20px;
+  }
+  
+  .switch {
+    width: auto;
+    display: block;
+    position: relative;
+    margin: 25px 5px 15px 5px;
+  }
+
+  .switch .well {
+    background: rgb(204, 234, 245);
+    height: 20px;
+    width: 75px;
+    position: absolute;
+    right: 50px;
+    top: 7px;
+
+  }
+  .switch #toggle {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+  }
+  .switch #toggle:after {
+    content: '';
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    left: 30px;
+    top: -5px;
+  }
+  .switch #toggle ~ div.doggy:before {
+    content: '\01F415';
+    position: absolute;
+    right: 120px;
+    top: 30px;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .switch #toggle:checked ~ div.doggy:before {
+    content: '\01F436';
+    top: 30px;
+    right: 0px;
+  }
+
+  .switch #toggle ~ label:before {
+    content: "No";
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .switch #toggle ~ label:after {
+    content: "Yes";
+    position: absolute;
+    left: 83px;
+    top: 0px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
