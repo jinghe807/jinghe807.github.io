@@ -18,6 +18,9 @@ Files and Directions:
 10. syntax.css : Using this CSS file, every page of my website provides a consisten look.
                 It provides three distinct differences in page layout based on the screen size.
                 I also styled all appropraite elements on all pages using a variety of attributes (background-color, border-radius,text-decoration,text-transform,border etc.)
+11.projectscript.js: It helps valid visitors' input and show error messages for invalid inputs.
+12.submit.php: If the visitors enter the valid input on the page of the contact me, http://localhost/submit.php will show a new record created successfully. New record will be created successfully in the database.
+13.vue.css: It helps provide css styling for education timeline(on the page of education).
 
 Images:
 photo01.jpeg
