@@ -5,7 +5,7 @@
  *, *::before, *::after {
 	 padding: 0;
 	 box-sizing: border-box;
-	 color: #fff;
+
 }
  main {
 	 height: 100%;
@@ -33,11 +33,10 @@
  .timeline li > span {
 	 content: '';
 	 position: absolute;
-	 top: 0;
-	 left: 0;
+	 top: 10;
 	 left: -25px;
-	 height: 110%;
-	 border: 2px solid rgba(255, 255, 255, 0.548);
+	 height: 100%;
+	 border: 1px solid rgba(138, 153, 237, 0.548);
 
 }
  .timeline li > span::before, .timeline li > span::after {
