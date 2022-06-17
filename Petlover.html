@@ -1,817 +1,96 @@
-* {
-	box-sizing: border-box;
-}
+<!--CS601 Assignment 1, Jing He-->
+<!--DOCTYPE declaration, using HTML5-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jing.</title><!--title of this page-->
+    <link rel="stylesheet" type="text/css" href="syntax.css">
+</head>
+<body><!--Body Part-->
+    <div class="pet_container">
+        <nav>
+            <header class="header">
+                  <h1 class="logo"><a href="index.html">Intro</a></h1>
+                <ul class="main-nav">
+                    <li><a href="BeautifulTown.html">BeatifulTown</a></li>
+                    <li><a href="Familytime.html">Familytime</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Minimalism.html">Minimalism</a></li>
+                    <li><a href="Petlover.html">Petlover</a></li>
+                    <li><a href="Photograph.html">Photograph</a></li>
+                    <li><a href="Favouritetvshow.html">Favouriteseries</a></li>
+                    <li><a href="Contactme.html">ContactMe</a></li>
+                </ul>
+              </header> 
+            </nav>
+
+
+        <figure><!--image of this page-->
+            <img src="images/photo07.jpg" alt="My cute dog" width="500" height="300">
+        </figure>
+
+
+        <header><!--header of this page-->
+            <h1>I am a petlover!</h1>
+        </header>
+        
+        <section id="section1"><!--Section part includes paragraphs-->
+            <p>My cute dog's name is Lily. She is my pet, my friend, and one of my important family members.</p>
+        </section>
 
 
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-h2,
-h3,
-a {
-	color: #34495e;
-}
-
-a {
-	text-decoration: none;
-}
-
-
-
-.logo {
-	margin: 0;
-	font-size: 1.45em;
-}
-
-.main-nav {
-	margin-top: 5px;
-
-}
-.logo a,
-.main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-}
-
-.main-nav a {
-	color: #34495e;
-	font-size: .5em;
-}
-
-.main-nav a:hover {
-	color: #718daa;
-}
+        <table><!--Table for tabular data-->
+            <caption>Lily's detailed information</caption>
+                <tbody>
+                <tr>
+                    <td>Breed</td><!--Table Data-->
+                    <td>Bichon Poodle</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td><!--Table Data-->
+                    <td>2015 June 19.</td>
+                </tr>
+                <tr>
+                    <td>Favourite Food</td><!--Table Data-->
+                    <td>white rice</td>
+                </tr>
+                <tr>
+                    <td>Favourite activities</td><!--Table Data-->
+                    <td>Car rides</td>
+                </tr>
+                <tr>
+                    <td>Favourite person</td><!--Table Data-->
+                    <td>Me! </td>
+                </tr>
+                </tbody>
+        </table>
 
 
 
-.header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
-  width:100%;
-	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-
-
-
-@media (min-width: 900px) {
-	.header,
-	.main-nav {
-		display: flex;
-	}
-	.header {
-		flex-direction: column;
-		align-items: center;
-  }.header{
-		width: 100%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	}
-
-
-
-@media (min-width: 1025px) {
-	.header {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-}
-
+    <list>
+    <section class="question-container">
   
-  /* Style the element: body */
-  body {
-    background-color: #f1dede;
-    padding:30px;
-    margin:30px;
-  }
-  
-  /* Style the element: nav */
-  /*nav li{
-    display:inline-block;
-    font-size:15px;
-    margin: 15px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    border-radius:1.5em;
-  }
-  
-  nav a{
-    color:rgba(136, 32, 3, 0.986);
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 18px;
-  }*/
-  
-  /* Style the element: h1 */
-  h1 {
-    color: rgb(18, 122, 233);
-    font-family: cursive;
-    font-size: 30px;
-    font-style: oblique;
-  }
-
-  h1 {
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-  /* Style the element: p */
-  p{
-    color: rgb(0, 0, 65);
-    font-family: serif;
-    font-size: 25px;
-    line-height: 30px;
-    font-style: italic;
-  }
-
-  
-
-  /* Style the element: table */
-  table{
-    color: rgba(1, 1, 0, 0.801);
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    padding:30px;
-    border:15px solid rgb(233, 179, 179);
-  }
-
-  /* Style the element: list */
-  li{
-    color: rgba(1, 1, 0, 0.801);
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  /* Style the element: figure */
-  figure {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10%;
-    }
-
-    figure {
-      animation-duration: 3s;
-      animation-name: slidein;
-    }
-    
-    @keyframes slidein {
-      from {
-        margin-left: 0%;
-        width: 200%;
-      }
-    
-      to {
-        margin-left: 1%;
-        width: 100%;
-      }
-    }
-
-  /* Style the element: video */
-  video {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20%;
-    }
-
-  /* Style the element: footer */
-  footer{
-    color: rgba(1, 1, 0, 0.801);
-    text-align: right;
-    font-family: Georgia, serif;
-    font-size: 18px;  
-  }
-
-  /* Style the element: link_text */
-  #link_text {
-    color: rgba(35, 35, 1, 0.729);
-    font-family: serif;
-    font-size: 15px;
-    line-height: 30px;
-    border: 2px dashed rgb(110, 186, 237); 
-  }
-
-  /* modify the class: intro_container */
-  .intro_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "section"
-      "footer"
-    ;
-    grid-gap: 0.2rem
-  }
-
-  /* modify the class: town_container */
-.town_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure content"
-    "table table"
-    "link footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-  /* modify the class: family_container */
-.family_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure video"
-    "section section"
-    "footer footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-  /* modify the class: edu_container */
-.edu_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure content1"
-    "content2 content2"
-    "footer footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-  /* modify the class: min_container */
-.min_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure content"
-    "table table"
-    "link footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-  /* modify the class: pet_container */
-.pet_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure content1"
-    "table content2"
-    "footer footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-
-.show_container {
-  display: grid;
-  height:100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-  grid-template-areas: 
-    "nav nav"
-    "header header"
-    "figure figure"
-    "table content"
-    "link footer"
-  ;
-  grid-gap: 0.2rem
-}
-
-/* specifies the grid items */
-nav {
-  grid-area: nav;
-}
-
-header {
-  grid-area: header;
-}
-
-figure {
-  grid-area: figure;
-}
-
-footer {
-  grid-area: footer;
-}
-
-section {
-  grid-area: section;
-}
-
-table {
-  grid-area: table;
-}
-
-#content {
-  grid-area: content;
-}
-
-#section1 {
-  grid-area: content1;
-}
-
-#section2 {
-  grid-area: content2;
-}
-
-#link {
-  grid-area: link;
-}
-
-video {
-  grid-area: video;
-}
-
-
-
-#frame {
-  grid-area: frame;
-}
-
-/* When max-width is 1000px, modify each pages layout using media queries */
-@media all and (max-width: 1000px) {
-  .intro_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "section"
-      "footer"
-    ;
-  }
-
-  .town_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 1.5fr 0.3fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "content"
-      "table"
-      "link"
-      "footer"
-    ;
-  }
-
-  .family_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "video"
-      "section"
-      "footer"
-    ;
-  }
-
-  .edu_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "content1"
-      "content2"
-      "footer"
-    ;
-  }
-
-  .min_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 1.5fr 0.3fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "content"
-      "table"
-      "link"
-      "footer"
-    ;
-  }
-
-  .pet_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1fr 1.5fr 1fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "content1"
-      "table"
-      "content2"
-      "footer"
-    ;
-  }
-
-
-
-  .show_container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav"
-      "header"
-      "figure"
-      "content"
-      "table"
-      "frame"
-      "footer"
-    ;
-  }
-}
-
-/* When min-width is 1200px, modify each pages layout using media queries */
-@media all and (min-width: 1200px) {
-  .intro_container {
-    display: grid;
-    height:100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav nav"
-      "header header header header"
-      "figure figure section section"
-      "footer footer footer footer"
-    ;
-  }
-
-  .town_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure content table"
-      "link link footer"
-    ;
-  }
-
-  .edu_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure content1 content2"
-      "footer footer footer"
-    ;
-  }
-
-  .family_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure video section"
-      "footer footer footer"
-    ;
-  }
-  
-  .min_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure content table"
-      "link link footer"
-    ;
-  }
-
-  .pet_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure content1 table"
-      "content2 content2 content2"
-      "footer footer footer"
-    ;
-  }
-
-
-  .show_container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.3fr 1.5fr 0.3fr;
-    grid-template-areas: 
-      "nav nav nav"
-      "header header header"
-      "figure figure figure"
-      "content content table"
-      "footer footer footer"
-    ;
-  }
-}
-
-.slidercontainer {
-  margin: 50px auto;
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-
-.sliderphoto {
-  position: absolute;
-  animation: round 7s infinite;
-  opacity: 0;
-}
-
-@keyframes round {
-  25% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-}
-@keyframes round {
-  25% {
-    opacity: 1;
-    -webkit-opacity: 1;
-  }
-  40% {
-    opacity: 0;
-    -webkit-opacity: 0;
-  }
-}
-
-img:nth-child(1) {
-  animation-delay: 4s;
-}
-img:nth-child(2) {
-  animation-delay: 3s;
-}
-img:nth-child(3) {
-  animation-delay: 2s;
-}
-img:nth-child(4) {
-  animation-delay: 1s;
-}
-img:nth-child(5) {
-  animation-delay: 0s;
-}
-
- /* Style the element: form */
- .form{
-  padding: 20px;
-}
-
-/* Style form background */
-.formcontext{
-  border-radius: 10px;
-}
-
-/* Style the element: header */
-.header{
-  border-radius: 10px;
-}
-
-/* Style the class: header */
-.form-control{
-  margin-bottom:20px;
-  position: relative;
-}
-
-/* Style the input of form-control */
-.form-control input{
-  width: 100%;
-  padding: 10px;
-}
-
-/* Style the small of form-control */
-.form-control small{
-  position:relative;
-  visibility: hidden;
-  color:red;
-  font-size:15px;
-}
-
-.message input{
-  margin-bottom:20px;
-  width: 100%; 
-  height: 100px;  
-}
-
-/* Style the submit */
-[type="submit"] {
-  clear: right;
-  font-size:25px;
-  background-color:rgb(242, 111, 10);
-  }
-
-#formheader{
-    text-align: center;
-    font-size:30px;
-}
-
-.form-control span{font-style: oblique;}
-
-
-
-
-
- /* Style the page: Contact Me */
- /* Style the element: h2 */
- h2{
-  text-align: center;
-  font:30px;
-}
-
-
-/* Style the element: form */
-.form{
-  padding: 20px;
-}
-
-/* Style form background */
-.formcontext{
-  border-radius: 10px;
-}
-
-/* Style the element: header */
-.header{
-  border-radius: 10px;
-}
-
-/* Style the class: header */
-.form-control{
-  margin-bottom:20px;
-  position: relative;
-}
-
-/* Style the input of form-control */
-.form-control input{
-  width: 100%;
-  padding: 15px;
-}
-
-/* Style the small of form-control */
-.form-control small{
-  position:relative;
-  visibility: hidden;
-  color:red;
-  font-size:15px;
-}
-
-/* Style the submit */
-[type="submit"] {
-  clear: right;
-  font-size:25px;
-  background-color:green;
-  }
-
-
-  .prompt{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:25px;
-    color:rgb(235, 176, 98);
-  }
-
-  section.question-container {
-    background-color: #c4e9f2;
-    display: block;
-    margin-left: 25px;
-    margin-top: 70px;
-    min-width: 430px;
-    max-width: 520px;
-    padding: 20px;
-  }
-  
-  .switch {
-    width: auto;
-    display: block;
-    position: relative;
-    margin: 25px 5px 15px 5px;
-  }
-
-  .switch .well {
-    background: rgb(204, 234, 245);
-    height: 20px;
-    width: 75px;
-    position: absolute;
-    right: 50px;
-    top: 7px;
-
-  }
-  .switch #toggle {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    height: 30px;
-    width: 150px;
-    position: absolute;
-    right: 0px;
-    top: 5px;
-  }
-  .switch #toggle:after {
-    content: '';
-    height: 40px;
-    width: 80px;
-    position: absolute;
-    left: 30px;
-    top: -5px;
-  }
-  .switch #toggle ~ div.doggy:before {
-    content: '\01F415';
-    position: absolute;
-    right: 120px;
-    top: 30px;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .switch #toggle:checked ~ div.doggy:before {
-    content: '\01F436';
-    top: 30px;
-    right: 0px;
-  }
-
-  .switch #toggle ~ label:before {
-    content: "No";
-    position: absolute;
-    left: -30px;
-    top: 0px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .switch #toggle ~ label:after {
-    content: "Yes";
-    position: absolute;
-    left: 83px;
-    top: 0px;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-
+    <div class="switch">
+      <input type="checkbox" id="toggle" tabindex="1">
+      <div class="doggy"></div>
+      <label for="toggle" class="well"></label>
+      <span class="prompt">Are you a pet lover?</span>
+    </div>
+
+    </section>
+    </list>
+   
+        <br><!--Line break-->
+        <br>
+        <footer><!--footer to show copyright-->
+            Copyright & copy; 2022 Jing He. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
