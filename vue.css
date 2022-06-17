@@ -3,7 +3,7 @@
 	 background-color: #fff;
 }
  *, *::before, *::after {
-	 padding: 0;
+	 padding: 0px;
 	 box-sizing: border-box;
 
 }
@@ -33,7 +33,7 @@
  .timeline li > span {
 	 content: '';
 	 position: absolute;
-	 top: 10;
+	 top: 10px;
 	 left: -25px;
 	 height: 100%;
 	 border: 1px solid rgba(138, 153, 237, 0.548);
