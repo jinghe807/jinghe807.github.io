@@ -10,10 +10,6 @@ More Animation have been added to the header and image of each page.
 
 
 
-Will work on these fields on future weeks:
-Navigation and text is being truncated on smaller screen. I will adjust media query to fix it.
-On the page of favouritetvshow, youtube video can not been played properly. I will fix it in the future weeks.
-I will also upload my code to GitHub in future weeks.
 
 
 Files and Directions:

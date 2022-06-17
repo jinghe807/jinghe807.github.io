@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ body {
+	 background-color: #fff;
+}
+ *, *::before, *::after {
+	 padding: 0;
+	 box-sizing: border-box;
+	 color: #fff;
+}
+ main {
+	 height: 100%;
+	 margin: 1em auto;
+	 padding: 40px;
+	 background: #60b0f5;
+}
+ .timeline {
+	 padding: 5px 45px;
+}
+ .timeline ul {
+	 position: relative;
+}
+ .timeline ul::before {
+	 content: '';
+	 position: absolute;
+}
+ .timeline li {
+	 position: relative;
+	 margin: 60px 35px;
+	 width: 100%;
+	 list-style: none;
+	 line-height: 25px;
+}
+ .timeline li > span {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 left: -25px;
+	 height: 110%;
+	 border: 2px solid rgba(255, 255, 255, 0.548);
+
+}
+ .timeline li > span::before, .timeline li > span::after {
+	 content: '';
+	 position: absolute;
+     top: 0;
+	 width: 17px;
+	 height: 17px;
+	 border: 3px solid rgb(20, 28, 176);
+	 border-radius: 100%;
+	 left: -7px;
+	 background: #4e9bfa;
+}
+
+ .timeline li > span::after {
+	 top: 100%;
+}
+
+
+ .timeline li .year span {
+	 position: absolute;
+	 left: -85px;
+	 text-align: right;
+}
+ .timeline li .year span:first-child {
+	 top: -20px;
+}

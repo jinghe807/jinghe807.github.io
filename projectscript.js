@@ -6,13 +6,13 @@ function validateInput()
     
     let inputtxt1 = document.getElementById("firstName");
     let inputtxt2 = document.getElementById("lastName");
-    let inputtxtfa = document.getElementById("facilitator");
+    let inputtxtem = document.getElementById("Email");
     
     let f_result = checkvalidfirst(inputtxt1); 
     let l_result = checkvalidlast(inputtxt2);
-    let fa_result = checkvalidfa(inputtxtfa);
+    let Em_result = checkvalidfa(inputtxtem);
 
-    return f_result && l_result && fa_result;
+    return f_result && l_result && Em_result;
 
 }
 
@@ -63,24 +63,21 @@ function checkvalidlast(inputtxt2)
     }
 }
 
-/* check valid facilitators' names */
-function checkvalidfa(inputtxtfa)
+/* check valid email format */
+function checkvalidfa(inputtxtem)
 { 
-    let tutor_name =inputtxtfa.value.toLowerCase().replace(/\s/g, '');
-    if(tutor_name ==='laura'  || tutor_name ==="fazil" || tutor_name ==="harsh")
-    {
-        ifSuccess(inputtxtfa);
-        return true;
+    let email_address =inputtxtem.value;
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+    if (email_address.match(validRegex)) {
+
+        ifSuccess(inputtxtem);   
+        return true;
     }
     else {
-        ifError(inputtxtfa,"Invalid facilitators' names");
+        ifError(inputtxtem,"Invalid email format");
         return false;
     }
-}
-
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
 

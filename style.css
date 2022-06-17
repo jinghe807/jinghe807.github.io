@@ -1,0 +1,53 @@
+
+ /* Style the element: h2 */
+ h2{
+    text-align: center;
+    font:30px;
+}
+
+ /* Style the element: body */
+body{
+    background-color: rgb(233, 249, 241);
+}
+
+ /* Style the element: form */
+.form{
+    padding: 20px;
+}
+
+ /* Style form background */
+.formcontext{
+    border-radius: 10px;
+}
+
+ /* Style the element: header */
+.header{
+    border-radius: 10px;
+}
+
+/* Style the class: header */
+.form-control{
+    margin-bottom:20px;
+    position: relative;
+}
+
+/* Style the input of form-control */
+.form-control input{
+    width: 100%;
+    padding: 15px;
+}
+
+/* Style the small of form-control */
+.form-control small{
+    position:relative;
+    visibility: hidden;
+    color:red;
+    font-size:15px;
+}
+
+/* Style the submit */
+[type="submit"] {
+    clear: right;
+    font-size:25px;
+    background-color:green;
+    }

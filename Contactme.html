@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,29 +7,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Me</title>
         <link href="syntax.css" rel="stylesheet" />
+
     </head>
     <body >
         <div class="formcontext">
-            <nav> <!--Navigation bar-->
-                <ul>
-                    <li><a href="Intro.html">Intro</a></li>
-                    <li><a href="BeautifulTown.html">BeatifulTown</a></li>
-                    <li><a href="Familytime.html">Familytime</a></li>
-                    <li><a href="Education.html">Education</a></li>
-                    <li><a href="Minimalism.html">Minimalism</a></li>
-                    <li><a href="Petlover.html">Petlover</a></li>
-                    <li><a href="Photograph.html">Photograph</a></li>
-                    <li><a href="Favouritetvshow.html">Favouriteseries</a></li>
-                    <li><a href="Contactme.html">ContactMe</a></li>
-                </ul>
-            </nav>
-        </div>
+            <nav>
+                <header class="header">
+                      <h1 class="logo"><a href="Intro.html">Intro</a></h1>
+                    <ul class="main-nav">
+                        <li><a href="BeautifulTown.html">BeatifulTown</a></li>
+                        <li><a href="Familytime.html">Familytime</a></li>
+                        <li><a href="Education.html">Education</a></li>
+                        <li><a href="Minimalism.html">Minimalism</a></li>
+                        <li><a href="Petlover.html">Petlover</a></li>
+                        <li><a href="Photograph.html">Photograph</a></li>
+                        <li><a href="Favouritetvshow.html">Favouriteseries</a></li>
+                        <li><a href="Contactme.html">ContactMe</a></li>
+                    </ul>
+                  </header> 
+                </nav>
+
+                <header><!--header of this page-->
+                    <h1>Contact Me!</h1>
+                </header>
+                    <!--submit form when all fields pass validation-->
+                    <form class="form" name='form' action="http://localhost/submit.php" onsubmit="return validateInput()" method="post" >
         
-        <header><!--header of this page-->
-            <h1>Contact Me!</h1>
-        </header>
-            <!--submit form when all fields pass validation-->
-            <!--<form class="form" name='form' action="https://bucs601.com/submit.php" onsubmit="return validateInput()"  method="post" >-->
                 <!--first name-->
                 <div class="form-control">
                     <span>First Name</span>
@@ -44,20 +48,23 @@
                 <!--facillitator's first names-->
                 <div class="form-control">
                     <span>Email</span>
-                    <input id="Email" type="text" name="Email" placeholder = "Type your email address here.." required="required"/>
+                    <input id="Email" type="text" name="Email" placeholder = "Type your email here.." required="required" />
                     <small>Error Message</small>
                 </div>
 
+                
                 <div class="message">
                     <span>Message</span>
-                    <input id="Message" type="text" name="Message" placeholder = "Type your message here.." required="required"/>
+                    <input id="message" type="text" name="message" placeholder = "Type your message here.." />
                 </div>
 
+
+            
                 <div class="form-control">
                     <input type="submit" value="Submit"/>
                 </div>
 
-
+            </form>
         </div>
         <script src="projectscript.js"></script>
     </body>

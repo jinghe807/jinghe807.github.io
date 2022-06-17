@@ -13,33 +13,89 @@
 </head>
 <body><!--Body Part-->
     <div class="edu_container">
-        <nav> <!--Navigation bar-->
-            <ul>
-                <li><a href="Intro.html">Intro</a></li>
-                <li><a href="BeautifulTown.html">BeatifulTown</a></li>
-                <li><a href="Familytime.html">Familytime</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Minimalism.html">Minimalism</a></li>
-                <li><a href="Petlover.html">Petlover</a></li>
-                <li><a href="Photograph.html">Photograph</a></li>
-                <li><a href="Favouritetvshow.html">Favouriteseries</a></li>
-                <li><a href="Contactme.html">ContactMe</a></li>
-            </ul>
-        </nav>
+        <nav>
+            <header class="header">
+                  <h1 class="logo"><a href="Intro.html">Intro</a></h1>
+                <ul class="main-nav">
+                    <li><a href="BeautifulTown.html">BeatifulTown</a></li>
+                    <li><a href="Familytime.html">Familytime</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Minimalism.html">Minimalism</a></li>
+                    <li><a href="Petlover.html">Petlover</a></li>
+                    <li><a href="Photograph.html">Photograph</a></li>
+                    <li><a href="Favouritetvshow.html">Favouriteseries</a></li>
+                    <li><a href="Contactme.html">ContactMe</a></li>
+                </ul>
+              </header> 
+            </nav>
 
 
-        <figure><!--image of this page-->
-            <img src="images/photo05.jpg" alt="Pictures of University of Waterloo" width="700" height="600">
-        </figure>
+
+
 
         <header><!--header of this page-->
             <h1>Education</h1>
         </header>
+
+        <main id="app">
+          <h3>Timeline</h3>
+          <link rel="stylesheet" type="text/css" href="vue.css">
+          <script src="vue.js"></script>
+          <section class="timeline">
+            <ul>
+              <li v-for="(info, index) in timeline_data" v-bind:key="index">
+                <span></span>
+                <div>{{ info.school }}</div>
+                <div>{{ info.address }}</div>
+                <div>{{ info.course }}</div>
+                <div class="year">
+                  <span>{{ info.yearEnd }}</span>
+                  <span>{{ info.yearStart }}</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+      
+      
+            
+      
+          
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      
+          <script>
+              new Vue({
+                  el: '#app',
+                  data: () => {
+                    return {
+                      timeline_data: [
+                        {
+                          "school":"University of Waterloo",
+                          "address":"200 University Ave W, Waterloo, ON N2L 3G1",
+                          "course":"BS in Statistics",
+                          "yearStart":"2012",
+                          "yearEnd":"2016"
+                        },
+                        {
+                          "school":"Boston University",
+                          "address":"Boston, MA 02215, United States",
+                          "course":"Software Development",
+                          "yearStart":"2020",
+                          "yearEnd":"2023"
+                        }
+                      ]
+                    }
+                  }
+                })
+                
+          </script>
+        </main>
         
         <section id="section1"><!--Section part includes paragraphs-->
             <p class="info">I hold a bachelor's degree in statistics from Univeristy of Waterloo.I am currently pursuing gratudate studying at Boston University.</p>
             <p class="info">This term, I took CS 601. I am looking forward to studing more about web development.I am excited to build my own website on this course.</p>
         </section>
+
+
 
         <section id="section2">
             <p class="info">I will have four more courses in the future terms. If you are looking to study with me, feel free to email me at jinghe@bu.edu</p>
