@@ -1,27 +1,21 @@
 ** Jing He Website **
 
-Projects:
-
-Updates for this week.
-I added two more html file this week. 
-On the page of photograph, image sliders of photographs have been added.
-On the page of favouritetvshow, youtube video will be added. (It does not work properly now.)
-More Animation have been added to the header and image of each page. 
-
-
+Projects' Goals:
+This website has nine pages. It shows my introduction, beautiful town (where I live), my family time, my education, minimalism (my lifestyle), pet lover(my habit), photograph(my habit), my favorite series, and the contact me form. Visitors can access all pages using the navigation bar. This website uses a clear and organized layout to show the details about me.
 
 
 
 Files and Directions:
-1. intro.html: It is a introduction about me.
+1. index.html: It is a introduction about me.
 2. BeatifulTown.html : It shows introduction and more details about this beautiful town: Oakville.
 3. Familytime.html: It records happy moments of my family time.
 4. Education.html: It shows my history education and future courses at Boston University.
 5. Minimalism.html: I am a minimalist and this page introduces the benefits of minimalism.
 6. Petlover.html: I am a petlover and this page shows the information of my pet.
 7. Photograph.html: This pages shows image sliders of my photographs.
-8. Favouritetvshow: This pages shows the information of my favourite tv shows.
-9. syntax.css : Using this CSS file, every page of my website provides a consisten look.
+8. Favouritetvshow.html: This pages shows the information of my favourite tv shows.
+9. ContactMe.html: Visitors can enter valid inputs(first name/last name/emails) and these inputs will be recorded into my database.
+10. syntax.css : Using this CSS file, every page of my website provides a consisten look.
                 It provides three distinct differences in page layout based on the screen size.
                 I also styled all appropraite elements on all pages using a variety of attributes (background-color, border-radius,text-decoration,text-transform,border etc.)
 
