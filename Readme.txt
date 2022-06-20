@@ -21,7 +21,7 @@ Files and Directions:
 11.projectscript.js: It helps valid visitors' input and show error messages for invalid inputs.
 12.submit.php: If the visitors enter the valid input on the page of the contact me, http://localhost/submit.php will show a new record created successfully. New record will be created successfully in the database.
 13.vue.css: It helps provide css styling for education timeline(on the page of education).
-14.Familyvideo.
+14.familytime.mp4: This video will be used on the page of FamilyTime
 
 15.Images:
 photo01.jpeg
@@ -37,8 +37,7 @@ photo11.jpg
 photo12.jpg
 photo16.jpg
 
-Video:
-familytime.mp4
+
 
 Credits:
 Built and designed by Jing He
