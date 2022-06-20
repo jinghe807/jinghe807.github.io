@@ -21,8 +21,9 @@ Files and Directions:
 11.projectscript.js: It helps valid visitors' input and show error messages for invalid inputs.
 12.submit.php: If the visitors enter the valid input on the page of the contact me, http://localhost/submit.php will show a new record created successfully. New record will be created successfully in the database.
 13.vue.css: It helps provide css styling for education timeline(on the page of education).
+14.Familyvideo.
 
-Images:
+15.Images:
 photo01.jpeg
 photo02.jpg
 photo03.jpeg
