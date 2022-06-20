@@ -33,13 +33,9 @@
             <h1>My favourite TV series: You</h1>
         </header>
 
-        <figure><!--image of this page-->
-        <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
-        <!-- This is a development version of Vue.js! -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="main.js" type="module"></script>
-
-
+                <main id="app">
+          <script src="vue.js"></script>
+          <section >
     <img
       :src="picture1Hover"
       @mouseover="hover = true"
@@ -50,14 +46,19 @@
       @mouseover="hover = true"
       @mouseleave="hover = false"
     />
-
-
-
-
-
-<script>
-export default {
-  name: "HelloWorld",
+    <img
+      :src="picture1Hover"
+          </section>
+      
+      
+            
+      
+          
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      
+          <script>
+              new Vue({
+                  el: '#app',
   data() {
     return {
       pictureStatic: require("@/assets/photo02.jpg"),
@@ -78,20 +79,10 @@ export default {
     picture2Hover() {
       if (this.hover === true) {
         return this.pictureGif02;
-      } else {
-        return this.pictureGif03;
-      }
-    },
-  },
-  template: `
-      <img :src="pictureHover" @mouseover="hover = true" @mouseleave="hover = false">
-    `,
-};
-</script>
-        </figure>
-        
-        
-        <script src="https://unpkg.com/vue@3"></script>
+                })
+                
+          </script>
+
 
   
         
