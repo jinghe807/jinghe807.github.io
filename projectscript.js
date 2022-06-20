@@ -6,7 +6,7 @@ function validateInput()
     
     let inputtxt1 = document.getElementById("firstName");
     let inputtxt2 = document.getElementById("lastName");
-    let inputtxtem = document.getElementById("Email");
+    let inputtxtem = document.getElementById("email");
     
     let f_result = checkvalidfirst(inputtxt1); 
     let l_result = checkvalidlast(inputtxt2);
